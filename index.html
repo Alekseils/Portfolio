@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Домашина Александра</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!-- Шапка с навигацией -->
+<header class="header">
+    <div class="logo-container">
+        <div class="logo-icon">
+            <img src="лого.png" alt="Логотип Молодежь без границ" class="logo-img">
+        </div>
+        <div class="logo-text-container">
+            <div class="logo-main-text">Портфолио</div>
+            <div class="logo-subtext">Молодежь без границ</div>
+        </div>
+    </div>
+    
+    <nav class="nav-links">
+        <a href="#about" class="nav-item active">Обо мне</a>
+        <a href="#education" class="nav-item">Образование</a>
+        <a href="#achievements" class="nav-item">Достижения</a>
+        <a href="#gallery" class="nav-item">Галерея</a>
+        <a href="#contact" class="nav-item">Контакты</a>
+    </nav>
+
+    <button class="menu-button" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+    </button>
+</header>
+
+    <!-- Часы -->
+    <div class="current-time" id="currentTime"></div>
+
+    <main>
+        <!-- Обо мне -->
+        <section id="about" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-image-placeholder">
+                    <img src="ава.jpg" alt="Домашина Александра" class="my-photo">
+                </div>
+                
+                <div class="hero-info">
+                    <h1>Домашина Александра Борисовна</h1>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <strong>Группа:</strong> 334
+                        </div>
+                        <div class="info-item">
+                            <strong>Специальность:</strong> Информационные системы и программирование
+                        </div>
+                        <div class="info-item">
+                            <strong>Профиль:</strong> Администратор баз данных
+                        </div>
+                        <div class="info-item">
+                            <strong>Колледж:</strong> ГПОАУ АО "Амурский педагогический колледж"
+                        </div>
+                    </div>
+                    
+                    <p>Я студентка Амурского педагогического колледжа, обучаюсь по специальности "Администратор баз данных". В рамках программы изучаю основы работы с базами данных, их проектирование и администрирование, а также сопутствующие технологии.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Образование -->
+        <section id="education" class="education-section hidden">
+            <h2>Образование</h2>
+            
+            <div class="education-info-card">
+                <h3>ГПОАУ АО "Амурский педагогический колледж"</h3>
+                
+                <div class="college-details">
+                    <p><strong>Полное наименование:</strong> Государственное профессиональное образовательное автономное учреждение Амурской области «Амурский педагогический колледж»</p>
+                    <p><strong>Сокращенное наименование:</strong> ГПОАУ АО АПК</p>
+                    <p><strong>Адрес сайта:</strong> <a href="https://apk28.ru" target="_blank">apk28.ru</a></p>
+                    <p><strong>E-mail:</strong> <a href="mailto:blg_prof_apk@obramur.ru">blg_prof_apk@obramur.ru</a></p>
+                    <p><strong>Год поступления:</strong> 2023</p>
+                    <p><strong>Срок обучения:</strong> 3 года 10 месяцев</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Достижения с вкладками -->
+        <section id="achievements" class="content-section hidden">
+            <h2>Мои достижения</h2>
+            
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="course1">1 курс</button>
+                <button class="tab-btn" data-tab="course2">2 курс</button>
+                <button class="tab-btn" data-tab="course3">3 курс</button>
+                <button class="tab-btn" data-tab="course4">4 курс</button>
+            </div>
+            
+            <div class="tab-content active" id="course1">
+                <h3>Достижения за 1 курс</h3>
+                <div class="achievement-grid">
+                    <img src="Достижения/1_1.jpg" alt="Достижение 1.1" class="achievement-item">
+                    <img src="Достижения/1_2.jpg" alt="Достижение 1.2" class="achievement-item">
+                    <img src="Достижения/1_3.jpg" alt="Достижение 1.3" class="achievement-item">
+                    <img src="Достижения/1_4.jpg" alt="Достижение 1.4" class="achievement-item">
+                    <img src="Достижения/1_5.jpg" alt="Достижение 1.5" class="achievement-item">
+                    <img src="Достижения/1_6.jpg" alt="Достижение 1.6" class="achievement-item">
+                    <img src="Достижения/1_7.jpg" alt="Достижение 1.7" class="achievement-item">
+                    <img src="Достижения/1_8.jpg" alt="Достижение 1.8" class="achievement-item">
+                </div>
+            </div>
+            
+            <div class="tab-content" id="course2">
+                <h3>Достижения за 2 курс</h3>
+                <div class="achievement-grid">
+                    <img src="Достижения/2_1.jpg" alt="Достижение 2.1" class="achievement-item">
+                    <img src="Достижения/2_2.jpg" alt="Достижение 2.2" class="achievement-item">
+                    <img src="Достижения/2_3.jpg" alt="Достижение 2.3" class="achievement-item">
+                    <img src="Достижения/2_4.jpg" alt="Достижение 2.4" class="achievement-item">
+                    <img src="Достижения/2_5.jpg" alt="Достижение 2.5" class="achievement-item">
+                    <img src="Достижения/2_6.jpg" alt="Достижение 2.6" class="achievement-item">
+                    <img src="Достижения/2_7.jpg" alt="Достижение 2.7" class="achievement-item">
+                    <img src="Достижения/2_8.jpg" alt="Достижение 2.8" class="achievement-item">
+                    <img src="Достижения/2_9.jpg" alt="Достижение 2.9" class="achievement-item">
+                    <img src="Достижения/2_10.jpg" alt="Достижение 2.10" class="achievement-item">
+                    <img src="Достижения/2_11.jpg" alt="Достижение 2.11" class="achievement-item">
+                    <img src="Достижения/2_12.jpg" alt="Достижение 2.12" class="achievement-item">
+                    <img src="Достижения/2_13.jpg" alt="Достижение 2.13" class="achievement-item">
+                    <img src="Достижения/2_14.jpg" alt="Достижение 2.14" class="achievement-item">
+                    <img src="Достижения/2_15.jpg" alt="Достижение 2.15" class="achievement-item">
+                    <img src="Достижения/2_16.jpg" alt="Достижение 2.16" class="achievement-item">
+                    <img src="Достижения/2_17.jpg" alt="Достижение 2.17" class="achievement-item">
+                    <img src="Достижения/2_18.jpg" alt="Достижение 2.18" class="achievement-item">
+                    <img src="Достижения/2_19.jpg" alt="Достижение 2.19" class="achievement-item">
+                    <img src="Достижения/2_20.jpg" alt="Достижение 2.20" class="achievement-item">
+                    <img src="Достижения/2_21.jpg" alt="Достижение 2.21" class="achievement-item">
+                    <img src="Достижения/2_22.jpg" alt="Достижение 2.22" class="achievement-item">
+                    <img src="Достижения/2_23.jpg" alt="Достижение 2.23" class="achievement-item">
+                    <img src="Достижения/2_24.jpg" alt="Достижение 2.24" class="achievement-item">
+                </div>
+            </div>
+            
+            <div class="tab-content" id="course3">
+                <h3>Достижения за 3 курс</h3>
+                <div class="achievement-grid">
+                    <img src="Достижения/3_1.png" alt="Достижение 3.1" class="achievement-item">
+                    <img src="Достижения/3_2.jpg" alt="Достижение 3.2" class="achievement-item">
+                    <img src="Достижения/3_3.jpg" alt="Достижение 3.3" class="achievement-item">
+                </div>
+            </div>
+            
+            <div class="tab-content" id="course4">
+                <h3>Достижения за 4 курс</h3>
+                <div class="achievement-grid">
+                    <p class="no-achievements">Достижения за 4 курс появятся позже</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Галерея -->
+        <section id="gallery" class="content-section hidden">
+            <h2>Фотогалерея</h2>
+            <p class="section-subtitle">Моменты с мероприятий и жизни в колледже</p>
+            
+            <div class="gallery-grid">
+                <img src="Фото/1.jpg" alt="Фото 1" class="gallery-item">
+                <img src="Фото/2.jpg" alt="Фото 2" class="gallery-item">
+                <img src="Фото/3.jpg" alt="Фото 3" class="gallery-item">
+                <img src="Фото/4.jpg" alt="Фото 4" class="gallery-item">
+                <img src="Фото/5.jpg" alt="Фото 5" class="gallery-item">
+                <img src="Фото/6.jpg" alt="Фото 6" class="gallery-item">
+                <img src="Фото/7.jpg" alt="Фото 7" class="gallery-item">
+                <img src="Фото/8.jpg" alt="Фото 8" class="gallery-item">
+                <img src="Фото/9.jpg" alt="Фото 9" class="gallery-item">
+                <img src="Фото/10.jpg" alt="Фото 10" class="gallery-item">
+                <img src="Фото/11.jpg" alt="Фото 11" class="gallery-item">
+                <img src="Фото/12.jpg" alt="Фото 12" class="gallery-item">
+                <img src="Фото/13.jpg" alt="Фото 13" class="gallery-item">
+                <img src="Фото/14.jpg" alt="Фото 14" class="gallery-item">
+                <img src="Фото/15.jpg" alt="Фото 15" class="gallery-item">
+                <img src="Фото/16.jpg" alt="Фото 16" class="gallery-item">
+                <img src="Фото/17.jpg" alt="Фото 17" class="gallery-item">
+                <img src="Фото/18.jpg" alt="Фото 18" class="gallery-item">
+                <img src="Фото/19.jpg" alt="Фото 19" class="gallery-item">
+                <img src="Фото/20.jpg" alt="Фото 20" class="gallery-item">
+                <img src="Фото/21.jpg" alt="Фото 21" class="gallery-item">
+                <img src="Фото/22.jpg" alt="Фото 22" class="gallery-item">
+                <img src="Фото/23.jpg" alt="Фото 23" class="gallery-item">
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contact" class="content-section hidden">
+            <h2>Контакты</h2>
+            
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Телефон</h3>
+                        <a href="tel:+79145628420" class="contact-link">+7 (914) 562-84-20</a>
+                        <p>Нажмите для звонка</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <a href="mailto:domasinasasa2@gmail.com" class="contact-link">domasinasasa2@gmail.com</a>
+                        <p>Нажмите для отправки письма</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fab fa-vk"></i>
+                    <div>
+                        <h3>ВКонтакте</h3>
+                        <a href="https://vk.com/alexksus" target="_blank" class="contact-link">vk.com/alexksus</a>
+                        <p>Нажмите для перехода на страницу</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Кнопка "Наверх" -->
+    <button id="scrollToTopBtn" title="Наверх">↑</button>
+
+    <!-- Модальное окно для увеличения изображений -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
